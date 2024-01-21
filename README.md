@@ -8,7 +8,8 @@ This lab simulated working for an organization that has requested assitance to i
 
 <h2>Languages and Utilities Used</h2>
 
-- <b>SQL</b> 
+- <b>SQL</b>
+- <b>MariaDB</b>
 
 <h2>Environments Used </h2>
 
@@ -68,7 +69,10 @@ Management finally requested that they wanted to issue another audit on all of t
 <br />
 <img src="https://i.imgur.com/tYutFUQ.png" height="80%" width="80%" alt="SQL Queries"/>
 I asked the question: Show me all of the employees who have a department that does not match Information Technology. The SQL query was: <b>SELECT * FROM employees WHERE NOT department = 'Information Technology';</b>. I had to issue a negative operator of NOT to exclude all the employees who did match with the IT department.
- 
+
+
+<h2>Summary</h2>
+The organization required several investigative audits to be conducted to look into suspicious activity that occurred around known times and from suspected geographic locations. In response to this information we also collected data about certain parts of the network which were thought to be possibly vulnerable, they were patched promptly and the overall security posture of the business was improved.
 </p>
 <!--
  ```diff

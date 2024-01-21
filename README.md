@@ -16,7 +16,7 @@ This lab simulated working for an organization that has requested assitance to i
 
 <h2>Project walk-through:</h2>
 
-<p align="center">
+<p>
 Our normal business hours end at 18:00, Monday through Friday. Management informed me that there was a possible incident that occurred after business hours. I will proceed to check out failed login attempts after business hours.<br />
 
 <img src="https://i.imgur.com/bZ9mMzh.png" height="80%" width="80%" alt="SQL Queries"/>

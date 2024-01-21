@@ -31,8 +31,6 @@ Management informed our cybersecurity team that a suspicious event occurred on 2
 <br />
 <br />
 <img src="https://i.imgur.com/vClwpMG.png" height="80%" width="80%" alt="SQL Queries"/>
-<br />
-<br />
 For demonstration purposes I left out the middle of the query and showed only the beginning and end.
 <br />
 <br />
@@ -44,6 +42,17 @@ login_date = ‘2022-05-09’;</b>. This question to the database returned 75 su
 <br />
 <br />
 <hr>
+Management has explained that they suspect the issue is occuring with login attempts happening outside of Mexico (where login attemps should only be coming from Mexico). I investigated the issue further by filtering the results on the MEX and MEXICO country codes within the database entries:
+<br />
+<br />
+<img src="https://i.imgur.com/F2dxKhF.png" height="80%" width="80%" alt="SQL Queries"/>
+<img src="https://i.imgur.com/Gfi4gJ5.png" height="80%" width="80%" alt="SQL Queries"/>
+
+
+
+
+
+
 </p>
 <!--
  ```diff

@@ -26,6 +26,7 @@ Our normal business hours end at 18:00, Monday through Friday. Management inform
 We have a log_in_attempts table which stores data about who, when, where and how (success/failure) our staff access the system. I issued a query which said: “Show me everything from our login attempts data that occurred after 18:00 and was also a login failure”.  In SQL this translates as <b>SELECT * FROM log_in_attempts WHERE login_time > ‘18:00’ AND success =0;</b>. This query returned a total of 19 entries that satisfied this question. Proving that there were multiple failed access attempts after hours.  
 <br />
 <br />
+<hr>
 Management informed our cybersecurity team that a suspicious event occurred on 2022-05-09 and they want all login activity from this day and the day previous to be retrieved.
 <img src="https://i.imgur.com/vClwpMG.png" height="80%" width="80%" alt="SQL Queries"/>
 For demonstration purposes I left out the middle of the query and showed only the beginning and end.

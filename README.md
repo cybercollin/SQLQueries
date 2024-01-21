@@ -52,7 +52,21 @@ Management wants to obtain the device information for all of the team members wh
 <br />
 <img src="https://i.imgur.com/4HpgPhW.png" height="80%" width="80%" alt="SQL Queries"/>
 I asked the question: “Show me all of the employees who work in the Marketing department and also have any office within the East wing”. This SQL query looked like <b>SELECT * FROM employees WHERE department = 'Marketing' AND office LIKE 'East%';</b>. The East wing of the organization has multiple offices, so this query required a wildcard of East% to grab all of the possibilities.
-
+<br />
+<br />
+<hr>
+Management wants to run an audit on all the employees within the Finance and Sales departments to see if everyone has a device tied to check that their devices are correctly patched as well:
+<br />
+<br />
+<img src="https://i.imgur.com/MYKEBBM.png" height="80%" width="80%" alt="SQL Queries"/>
+I asked the question: “Show me all of the employees that have a department name of Finance or a department name of Sales”. The SQL was: <b>SELECT * FROM employees WHERE department = 'Sales' or department = 'Finance';</b>.
+<br />
+<br />
+<hr>
+Management finally requested that they wanted to issue another audit on all of the employees who are not in the IT department:
+<img src="https://i.imgur.com/tYutFUQ.png" height="80%" width="80%" alt="SQL Queries"/>
+I asked the question: Show me all of the employees who have a department that does not match Information Technology. The SQL query was: <b>SELECT * FROM employees WHERE NOT department = 'Information Technology';</b>. I had to issue a negative operator of NOT to exclude all the employees who did match with the IT department.
+ 
 </p>
 <!--
  ```diff

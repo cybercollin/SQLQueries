@@ -64,6 +64,8 @@ I asked the question: “Show me all of the employees that have a department nam
 <br />
 <hr>
 Management finally requested that they wanted to issue another audit on all of the employees who are not in the IT department:
+<br />
+<br />
 <img src="https://i.imgur.com/tYutFUQ.png" height="80%" width="80%" alt="SQL Queries"/>
 I asked the question: Show me all of the employees who have a department that does not match Information Technology. The SQL query was: <b>SELECT * FROM employees WHERE NOT department = 'Information Technology';</b>. I had to issue a negative operator of NOT to exclude all the employees who did match with the IT department.
  

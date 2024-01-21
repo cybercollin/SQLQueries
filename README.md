@@ -27,8 +27,9 @@ We have a log_in_attempts table which stores data about who, when, where and how
 <br />
 <br />
 Management informed our cybersecurity team that a suspicious event occurred on 2022-05-09 and they want all login activity from this day and the day previous to be retrieved.
-
 <img src="https://i.imgur.com/vClwpMG.png" height="80%" width="80%" alt="SQL Queries"/>
+For demonstration purposes I left out the middle of the query and showed only the beginning and end.
+<img src="https://i.imgur.com/7Np79JQ.png" height="80%" width="80%" alt="SQL Queries"/>
 
 
 </p>

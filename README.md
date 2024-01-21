@@ -21,8 +21,6 @@ Our normal business hours end at 18:00, Monday through Friday. Management inform
 <br />
 <br />
 <img src="https://i.imgur.com/bZ9mMzh.png" height="80%" width="80%" alt="SQL Queries"/>
-<br />
-<br />
 We have a log_in_attempts table which stores data about who, when, where and how (success/failure) our staff access the system. I issued a query which said: “Show me everything from our login attempts data that occurred after 18:00 and was also a login failure”.  In SQL this translates as <b>SELECT * FROM log_in_attempts WHERE login_time > ‘18:00’ AND success =0;</b>. This query returned a total of 19 entries that satisfied this question. Proving that there were multiple failed access attempts after hours.  
 <br />
 <br />
@@ -35,9 +33,7 @@ For demonstration purposes I left out the middle of the query and showed only th
 <br />
 <br />
 <img src="https://i.imgur.com/7Np79JQ.png" height="80%" width="80%" alt="SQL Queries"/>
-<br />
-<br />
-Within our log_in_attempts table we store the dates of attempts. I issued a query asking: “Show me all of the login attempts that occurred on 2022-05-08 or 2022-05-09” by using the SQL statement <b></b>SELECT * FROM log_in_attempts WHERE login_date = ‘2022-05-08’ OR
+Within our log_in_attempts table we store the dates of attempts. I issued a query asking: “Show me all of the login attempts that occurred on 2022-05-08 or 2022-05-09” by using the SQL statement <b>SELECT * FROM log_in_attempts WHERE login_date = ‘2022-05-08’ OR
 login_date = ‘2022-05-09’;</b>. This question to the database returned 75 successful results.
 <br />
 <br />
@@ -47,11 +43,15 @@ Management has explained that they suspect the issue is occuring with login atte
 <br />
 <img src="https://i.imgur.com/F2dxKhF.png" height="80%" width="80%" alt="SQL Queries"/>
 <img src="https://i.imgur.com/Gfi4gJ5.png" height="80%" width="80%" alt="SQL Queries"/>
-
-
-
-
-
+I asked the question of: “Show me all of the login attempts that occurred in a country that isn’t Mexico”. Because our database stores country codes sometimes with different signatures, such as CANADA and CAN or MEX and MEXICO, I had to add a wildcard of % to the SQL query to explain that I want to see anything that starts with MEX and has any amount of characters after. The SQL query was: <b>SELECT * FROM log_in_attempts WHERE NOT country LIKE 'MEX%';</b>. I found that this query returned 144 login attempts not from Mexico.
+<br />
+<br />
+<hr>
+Management wants to obtain the device information for all of the team members who work in Marketing and are also in any of the East offices. One of our IT engineers has informed us that there are urgent patches that their devices need:
+<br />
+<br />
+<img src="https://i.imgur.com/4HpgPhW.png" height="80%" width="80%" alt="SQL Queries"/>
+I asked the question: “Show me all of the employees who work in the Marketing department and also have any office within the East wing”. This SQL query looked like <b>SELECT * FROM employees WHERE department = 'Marketing' AND office LIKE 'East%';</b>. The East wing of the organization has multiple offices, so this query required a wildcard of East% to grab all of the possibilities.
 
 </p>
 <!--
